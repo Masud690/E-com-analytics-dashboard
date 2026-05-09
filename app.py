@@ -1,8 +1,11 @@
+import os
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 st.set_page_config(
     page_title="E-Commerce Customer Analytics",
@@ -82,10 +85,10 @@ div[data-testid="stSidebar"] {
 # ── Load Data ────────────────────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    rfm       = pd.read_csv("data/Rfm_segments.csv")
-    monthly   = pd.read_csv("data/Monthly_revenue.csv")
-    city_rank = pd.read_csv("data/cutomer_city_rank.csv")
-    running   = pd.read_csv("data/running_total_revenue_by_customer.csv")
+    rfm       = pd.read_csv(os.path.join(BASE_DIR, "data", "Rfm_segments.csv"))
+    monthly   = pd.read_csv(os.path.join(BASE_DIR, "data", "Monthly_revenue.csv"))
+    city_rank = pd.read_csv(os.path.join(BASE_DIR, "data", "cutomer_city_rank.csv"))
+    running   = pd.read_csv(os.path.join(BASE_DIR, "data", "running_total_revenue_by_customer.csv"))
     return rfm, monthly, city_rank, running
 
 rfm, monthly, city_rank, running = load_data()
