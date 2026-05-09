@@ -1,0 +1,10 @@
+customer_id,customer_name,city,last_order_date,recency_days,frequency,monetary,r_score,f_score,m_score,rfm_score,rfm_total,segment
+1,"Riya Sharma",Kolkata,2024-06-15,47,3,60300.00,3,5,5,355,13,"Loyal Customers"
+10,"Karan Singh",Jaipur,2024-07-20,12,1,55000.00,5,3,4,534,12,"Loyal Customers"
+5,"Priya Bose",Kolkata,2024-07-18,14,2,1350.00,4,4,2,442,10,"Need Attention"
+4,"Dev Nair",Bangalore,2024-04-10,113,3,59499.00,2,4,4,244,10,"At Risk"
+8,"Soham Das",Kolkata,2024-07-10,22,1,8500.00,4,2,3,423,9,"New Customers"
+7,"Ankita Roy",Pune,2024-07-05,27,2,6300.00,3,3,2,332,8,"Need Attention"
+3,"Sneha Patel",Ahmedabad,2024-05-30,63,1,900.00,2,2,1,221,5,"Lost Customers"
+2,"Arjun Mehta",Mumbai,2023-11-05,270,1,8500.00,1,1,3,113,5,"Cant Lose Them"
+6,"Rahul Gupta",Delhi,2022-12-01,609,1,1200.00,1,1,1,111,3,"Lost Customers"
